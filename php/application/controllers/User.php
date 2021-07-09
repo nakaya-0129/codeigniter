@@ -1,18 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class User extends CI_Controller {
 
-        public function __construct(){
-          $this->load->helper('url');
-          $this->load
+
+        //----------------------
+        public function test(){
         }
 
 
         //---------------------
 	public function index(){
-          $this->load->helper('url');
-          $this->load->view('index');
+
+            $this->load->view('welcome_message');
 	}
 
         public function test2(){
@@ -30,5 +30,8 @@ class Welcome extends CI_Controller {
        }
        public function pref(){
          $this->load->view('pref');
+       }
+       public function sushiichi(){ 
+         $this->load->view('sushiichi');
        }
 }

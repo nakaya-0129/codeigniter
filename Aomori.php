@@ -13,5 +13,6 @@ Class Aomori extends CI_Controller{
    } 
    public function registar(){
      $this->load->view('aomori_registar');
+     $this->load->view('aomori_post');
    }
 }

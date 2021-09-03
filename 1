@@ -1,0 +1,25 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Sushiichi extends CI_Controller {
+        //---------------------
+	public function index(){
+         $this->load->view('index.php');
+         $this->load->helper('url');
+	}
+	public function sousaku(){
+         $this->load->view('sousaku.php');
+         $this->load->helper('url');
+        }    
+	public function sinagaki(){
+         $this->load->view('sinagaki.php');
+         $this->load->helper('url');
+        }    
+	public function form(){
+         $this->load->view('form.php');
+         $this->load->helper('url');
+        }    
+        public function pref(){
+         $this->load->view('pref');
+        }
+}
